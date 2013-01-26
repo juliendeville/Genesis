@@ -1,13 +1,20 @@
+
+// The target we are following
 var target : Transform;
-var distance = 3.0;
-var height = 3.0;
-var damping = 5.0;
-var smoothRotation = false;
-var rotationDamping = 10.0;
+// The distance in the x-z plane to the target
+var distanceZ = 10.0;
+// the height we want the camera to be above the target
+var distanceY = 5.0;
+
+
 
 function Update () {
-	var wantedPosition = target.TransformPoint(0, height, -distance);
-	transform.position = Vector3.Lerp (transform.position, wantedPosition, Time.deltaTime * damping);
-	
-	transform.LookAt (target, target.up);
+	if (!target)
+		return;
+
+		transform.position.x = target.position.x;
+		transform.position.y = target.position.y + distanceY;
+		transform.position.z = target.position.z - distanceZ;
+		
+		 transform.LookAt(target);
 }

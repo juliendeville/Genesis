@@ -48,13 +48,6 @@
      <Compile Include="Assets\Jeu\Decor\decor.js" />
      <Compile Include="Assets\Jeu\Perso\Actions\actions.js" />
      <Compile Include="Assets\Jeu\Perso\Camera\Camera.js" />
-     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{B7935DA0-CE2C-920F-7FE4-EBA0F3E3EF67}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{154CD3C3-8DCC-EBF6-AEB9-CA5EC86D55A7}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
